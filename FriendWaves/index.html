@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/login/styles/login-style-1.css">
+    <link rel="stylesheet" href="assets/login/styles/mediaLogin.css">
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+    <title>FriendWaves</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="Friend">Friend</h1>
+        <h1 id="Waves">Waves</h1>
+        <div class="cadastro">
+            <h3>Ainda não tem uma conta ? <a id="link" href="assets/registration/registration.html">Cadastre-se</a></h3>
+        </div>
+    </header>
+    <main class="main-login">
+
+        <section class="left-login">
+            <div class="card-login">
+                <div class="box-login">
+                    <h1 id="Login">Login</h1>
+                    <div class="msg">
+                        <div class="msgerror">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav">
+                    <div class="textfild">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="Digite seu E-mail" required>
+                        <div class="campoVazio">
+                            <div  id="campoVazioEmail"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="textfild">
+                        <label for="Senha">Senha</label>
+                        <input type="password" placeholder="Digite sua Senha" id="password" required>
+                        <img class="eye-svg " src="svgs/eye-off.svg">
+                        <div class="campoVazio">
+                            <div id="campoVazioSenha"></div>
+                        </div>
+                    </div>
+
+                    <div class="save">
+                        <label id="Salvar" for="Salvar">Salvar Senha ?</label>
+                        <input id="check" type="checkbox">
+                    </div>
+                    <button id="bnt">ENTRAR</button>
+                    <div class="esqueceu-a-senha">
+                        <a href="#">
+                            <h3>Esqueceu a Senha?</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cadastro2">
+                <h3>Ainda não tem uma conta ? <a id="link" href="assets/registration/registration.html">Cadastre-se</a></h3>
+
+            </div>
+        </section>
+
+        <section class="rigth-login">
+            <div class="title-rigth">
+                <h1>Venha Fazer parte da nossa comunidade</h1>
+                <p>
+                    O FriendWaves ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+                </p>
+            </div>
+            <img id="undraw_online" src="svgs/undraw_online.svg" alt="undraw_online">
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6ba954d6dc.js" crossorigin="anonymous"></script>
+    <script src="assets/login/js/login-script-1.js"></script>
+</body>
+
+</html>

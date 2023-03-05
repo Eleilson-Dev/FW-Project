@@ -1,0 +1,68 @@
+@media only screen and (max-width: 500px) {
+    header {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        justify-content: center;
+    }
+    body {
+        position: relative;
+        margin: 0;
+        width: 99vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .cadastro {
+        display: none;
+    }
+    .cadastro2 {
+        position: absolute;
+        top: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 90vw;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 0 0 0;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    main {
+        margin: 0;
+        width: 100vw;
+        height: 83vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-login {
+        margin: 0;
+    }
+    .left-login {
+        position: relative;
+        width: 99%;
+        height: 70%;
+    }
+    .card-login {
+        position: absolute;
+        top: 5%;
+        justify-content: start;
+        width: 340px;
+        height: 360px;
+    }
+    
+    .rigth-login {
+        display: none;
+    }
+    #Login {
+        margin-top: 1%;
+    }
+    .save {
+        border: solid transparent;
+        display: flex;
+        align-items: center;
+    }
+    #bnt {
+        margin-top: 0;
+    }
+}

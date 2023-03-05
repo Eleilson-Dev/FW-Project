@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kdam';
+    src: url(../../../fontes/KdamThmorPro-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'nuosuSIl';
+    src: url(../../../../fontes/NuosuSIL-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../../../fontes/BebasNeue-Regular.ttf)format('truetype');
+}
+
+ :root {
+    --font-padrao: arial, verdana, helvetica, Sans-serif;
+    --font-normal-1: 'nuosuSIl';
+    --font-normal-2: 'BebasNeue';
+    --font-principal: 'kdam';
+    --cor-0: #03e37a;
+    --cor-1: #17ade9;
+    --cor-2: #514869;
+    --cor-3: #142c32;
+    --cor-4: #000056;
+    --cor-5: #021A20;
+    --cor-6: rgb(201, 206, 210);
+    --cor-7: #201b2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+.navigation {
+    z-index: 2;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: var(--cor-3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    transition: heigth 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+}
+
+.navigation .userBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.navigation .userBx .username {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.navigation.active {
+    width: 300px;
+    height: 400px;
+    transition: width 0.5s, heigth 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+
+.navigation.active .userBx {
+    width: calc(100% - 60px);
+}
+
+.navigation .userBx .imgBx {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #000;
+    border-radius: 50%;
+    border: 10px solid var(--cor-3);
+}
+
+.navigation .userBx .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.navigation .menuTogle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .menuTogle::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #fff;
+    transition: 0.5s;
+}
+
+.navigation .menuTogle::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.navigation.active .menuTogle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #fff;
+}
+
+.navigation.active .menuTogle::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.menu li a:hover {
+    color: #2dfc52;
+}
+
+.menu li ion-icon {
+    font-size: 1.5em;
+    color: #fff;
+}

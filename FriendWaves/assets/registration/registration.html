@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/registration-style.css" />
+    <link rel="shortcut icon"  href="../../favicons/favicon-16x16.png" type="image/x-icon" />
+    <title>FriendWaves</title>
+</head>
+
+<body id="mal">
+    <header>
+        <div class="title">
+            <h1 id="Friend">Friend</h1>
+            <h1 id="Waves">Waves</h1>
+        </div>
+        <div class="link-enter">
+            <h3>Já tenho uma conta</h3>
+            <a id="link" href="../../index.html">ENTRAR</a>
+        </div>
+    </header>
+    <main>
+        <section class="img">
+            <img id="Forms-amico" src="../../svgs/Forms-amico.svg" alt="Forms-amico"/>
+        </section>
+        <form class="form">
+            <div class="form-header">
+                <h1>Cadastre-se</h1>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="fistname">Nome</label>
+                    <input
+                        id="fistname"
+                        type="text"
+                        name="lastname"
+                        placeholder="Digite seu Primeiro nome"
+                        required 
+                    />
+
+                    <ion-icon
+                        id="icon-sucess-1"
+                        class="icon-check-sucess"
+                        name="checkmark-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-error-1"
+                        class="icon-check-error"
+                        name="alert-outline"
+                    ></ion-icon>
+                    <div class="Msg">
+                        <div id="msgNome"></div>
+                    </div>
+                </div>
+                    <div class="input-box">
+                        <label for="laststname">Sobrenome</label>
+                        <input
+                            id="laststname"
+                            type="text"
+                            name="lastname"
+                            placeholder="Digite seu Sobrenome"
+                            required
+                        />
+                        <ion-icon
+                            id="icon-sucess-2"
+                            class="icon-check-sucess"
+                            name="checkmark-outline"
+                        ></ion-icon>
+                        <ion-icon
+                            id="icon-error-2"
+                            class="icon-check-error"
+                            name="alert-outline"
+                        ></ion-icon>
+                        <div class="Msg">
+                            <div id="msgSobrenome"></div>
+                        </div>
+                    </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input
+                        id="email"
+                        type="text"
+                        name="email"
+                        placeholder="Digite seu E-mail"
+                        required
+                    />
+                    <ion-icon
+                        id="icon-sucess-3"
+                        class="icon-check-sucess"
+                        name="checkmark-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-error-3"
+                        class="icon-check-error"
+                        name="alert-outline"
+                    ></ion-icon>
+                    <div class="Msg">
+                    <div id="msgEmail"></div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="number">Telefone</label>
+                    <input
+                        id="number"
+                        type="tel"
+                        name="number"
+                        placeholder="(xx) xxxxx-xxxx"
+                        required
+                    />
+                    <ion-icon
+                        id="icon-sucess-4"
+                        class="icon-check-sucess"
+                        name="checkmark-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-error-4"
+                        class="icon-check-error"
+                        name="alert-outline"
+                    ></ion-icon>
+                    <div class="Msg">
+                        <div id="msgTelefone"></div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input
+                        id="password"
+                        type="password"
+                        name="ipassword"
+                        placeholder="Digite sua Senha"
+                        autocomplete="on"
+                        required
+                    />
+                    <ion-icon
+                        id="eyePassword"
+                        class="eye-icon"
+                        name="eye-off-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-sucess-5"
+                        class="icon-check-sucess"
+                        name="checkmark-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-error-5"
+                        class="icon-check-error"
+                        name="alert-outline"
+                    ></ion-icon>
+                    <div class="Msg">
+                        <div id="msgSenha"></div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="Confirmpassword">Comfirme sua Senha</label>
+                    <input
+                        id="Confirmpassword"
+                        type="password"
+                        name="iconfirmpassword"
+                        placeholder="Comfirme sua Senha"
+                        autocomplete="on"
+                        required
+                    />
+                    <ion-icon
+                        id="eyeConfirmpassword"
+                        class="eye-icon"
+                        name="eye-off-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-sucess-6"
+                        class="icon-check-sucess"
+                        name="checkmark-outline"
+                    ></ion-icon>
+                    <ion-icon
+                        id="icon-error-6"
+                        class="icon-check-error"
+                        name="alert-outline"
+                    ></ion-icon>
+                    <div class="Msg">
+                        <div id="msgConfirmarSenha"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="continue-buttom">
+                <a id="continue" href="#">CONTINUAR</a>
+            </div>
+        </form>
+    </main>
+    <script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script  nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

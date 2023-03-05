@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kdam';
+    src: url(../../../fontes/KdamThmorPro-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'nuosuSIl';
+    src: url(../../../fontes/NuosuSIL-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../../../fontes/BebasNeue-Regular.ttf)format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ :root {
+    --font-padrao: arial, verdana, helvetica, Sans-serif;
+    --font-normal-1: 'nuosuSIl';
+    --font-normal-2: 'BebasNeue';
+    --font-principal: 'kdam';
+    --cor-0: #03e37a;
+    --cor-1: #17ade9;
+    --cor-2: #514869;
+    --cor-3: #142c32;
+    --cor-4: #000056;
+    --cor-5: #021A20;
+    --cor-6: rgb(201, 206, 210);
+    --cor-7: #201b2c;
+    --cor-8: #282A36;
+    --cor-9: #DD6387;
+}
+
+.grid::-webkit-scrollbar {
+    margin-left: 5px;
+    width: 10px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.grid::-webkit-scrollbar-thumb:hover {
+    background-color: #989595;
+}
+
+.phot {
+    background-color: #142c32;
+    width: 100%;
+    height: 100px;
+}
+
+#photo-1 {
+    background-image: url(../photos/1659141623630.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-2 {
+    background-image: url(../photos/1659141623638.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-3 {
+    background-image: url(../photos/1659141623645.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-4 {
+    background-image: url(../photos/1659141623653.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-5 {
+    background-image: url(../photos/1659141623658.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-6 {
+    background-image: url(../photos/1659141623664.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-7 {
+    background-image: url(../photos/1659141623674.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-7 {
+    background-image: url(../photos/1659141623674.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-8 {
+    background-image: url(../photos/1659141623680.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-9 {
+    background-image: url(../photos/1659141623685.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-10 {
+    background-image: url(../photos/1659141623690.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-11 {
+    background-image: url(../photos/1659141623696.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-12 {
+    background-image: url(../photos/1659141623701.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-13 {
+    background-image: url(../photos/1659141623705.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-13 {
+    background-image: url(../photos/1659141623711.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-14 {
+    background-image: url(../photos/1659141623716.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-15 {
+    background-image: url(../photos/1659141623721.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-16 {
+    background-image: url(../photos/1659141623726.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-16 {
+    background-image: url(../photos/1659141623705.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-17 {
+    background-image: url(../photos/17.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-18 {
+    background-image: url(../photos/18.jpg);
+    background-position: center center;
+    background-size: cover;
+}

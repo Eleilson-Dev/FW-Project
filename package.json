@@ -1,0 +1,29 @@
+{
+  "name": "projeto-fw",
+  "version": "1.0.0",
+  "description": "Meu Projeto Pessoal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleilson69/Projeto-FW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eleilson69/Projeto-FW/issues"
+  },
+  "homepage": "https://github.com/Eleilson69/Projeto-FW#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "eslint": "^8.24.0",
+    "express": "^4.18.1",
+    "global": "^4.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}

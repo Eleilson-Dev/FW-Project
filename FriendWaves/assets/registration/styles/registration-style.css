@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kdam';
+    src: url(../../../fontes/KdamThmorPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nuosuSIl';
+    src: url(../../../fontes/NuosuSIL-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../../../fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-padrao: arial, verdana, helvetica, Sans-serif;
+    --font-normal-1: 'nuosuSIl';
+    --font-normal-2: 'BebasNeue';
+    --font-principal: 'kdam';
+    --cor-0: #03e37a;
+    --cor-1: #17ade9;
+    --cor-2: #514869;
+    --cor-3: #142c32;
+    --cor-4: #000056;
+    --cor-5: #021a20;
+    --cor-6: rgb(201, 206, 210);
+    --cor-7: #201b2c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-5);
+}
+
+header {
+    font-family: var(--font-principal);
+    width: 90%;
+    height: 70px;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+}
+
+#Friend {
+    color: var(--cor-0);
+}
+
+#Waves {
+    color: var(--cor-1);
+}
+
+.link-enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-enter h3 {
+    margin-right: 10px;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    border-bottom: solid var(--cor-3);
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.516);
+}
+
+.img {
+    width: 45%;
+    background-color: var(--cor-7);
+}
+
+.form {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: var(--cor-3);
+}
+
+.form-header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-family: var(--font-principal);
+}
+
+.form-header > h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #8a46c2;
+    border-radius: 10px;
+}
+
+#link {
+    width: 83px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cor-0);
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#link:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #8a46c2;
+}
+
+#Forms-amico {
+    width: 80%;
+    margin-left: 50px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.Msg {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    color: rgb(255, 0, 76);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-check-error {
+    display: none;
+    color: #fff;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 43px;
+    right: 0;
+    background-color: #e30325;
+    border-radius: 5px;
+}
+
+.icon-check-sucess {
+    display: none;
+    color: #fff;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 43px;
+    right: 0;
+    background-color: #03e37a;
+    border-radius: 5px;
+}
+
+.eye-icon {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.input-box > input {
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 3px 10px var(--cor-4);
+    background-color: var(--cor-2);
+}
+
+.input-box > input:hover {
+    transition: 0.5s;
+    background-color: #5b4c85;
+}
+
+label {
+    font-family: var(--font-principal);
+    color: #fff;
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.continue-buttom {
+    border: solid transparent;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#continue {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    background-color: var(--cor-0);
+    margin: 0px 10px 0px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-principal);
+}
+
+#continue:hover {
+    color: #fff;
+    transition: 0.5s;
+    background-color: #5b4c85;
+}
